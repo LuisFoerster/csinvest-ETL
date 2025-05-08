@@ -7,6 +7,11 @@ from loader.steam_loader import SteamLoader
 def create_steam_pricehistory_pipeline(
     steamcommunity, market_hash_name: str, interval: int = 100, start_delay: int = 0
 ):
+    """
+    This Pipeline extracts the price history of a given market hash name from the Steam Community.
+    It then transforms the data and calculates the mean price of the item.
+    Finally, it loads the data into the database. (Mocked for now)
+    """
 
     pipeline = Pipeline()
 
