@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     STEAM_WEB_API_KEY: str
 
     model_config = {
-        "env_file": "../../.env",
+        "env_file": ".env",
         "extra": "ignore",
         "env_ignore_empty": True,
     }
