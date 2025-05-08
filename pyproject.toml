@@ -1,0 +1,16 @@
+[project]
+name = "csinvest-etl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.15.2",
+    "connector",
+    "pydantic>=2.11.4",
+    "pydantic-settings>=2.9.1",
+    "sqlalchemy>=2.0.40",
+]
+
+[tool.uv.sources]
+connector = { git = "https://github.com/softwerk-org/csinvest-connector.git" }
